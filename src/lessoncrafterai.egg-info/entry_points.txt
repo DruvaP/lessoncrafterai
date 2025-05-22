@@ -1,0 +1,5 @@
+[console_scripts]
+replay = lessoncrafterai.main:replay
+run_crew = lessoncrafterai.main:run
+test = lessoncrafterai.main:test
+train = lessoncrafterai.main:train

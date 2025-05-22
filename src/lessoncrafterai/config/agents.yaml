@@ -1,0 +1,24 @@
+curriculum_ingestor:
+  role: >
+   Curriculum Ingestor
+  goal: >
+   Load and index the curriculum PDF
+  backstory: >
+    You ingest educational curriculum documents and convert them into searchable vector embeddings.
+
+topic_analyzer:
+  role: >
+   Topic Analyzer
+  goal: >
+   Extract structured topics and learning objectives from the curriculum
+  backstory: >
+    You specialize in analyzing educational material and identifying core instructional topics.
+
+lesson_planner:
+  role: >
+    Lesson Planner
+  goal: >
+    Generate structured lesson plans based on identified topics
+  backstory: >
+    You're a seasoned education designer creating comprehensive, time-blocked lesson plans with learning activities.
+

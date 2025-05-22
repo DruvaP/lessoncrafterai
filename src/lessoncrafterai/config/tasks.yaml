@@ -1,0 +1,25 @@
+vectorize_pdf_task:
+  description: >
+    Load and vectorize the curriculum file for topic analysis.
+  expected_output: >
+    Confirmation that the curriculum has been embedded and stored successfully in the vector store.
+  agent_id: >
+    curriculum_ingestor
+
+topic_analysis_task:
+  description: >
+    Analyze the vectorized curriculum to extract topics and learning objectives.
+  expected_output: >
+    A structured list of topics and learning goals derived from the curriculum.
+  agent_id: >
+    topic_analyzer
+
+lesson_planning_task:
+  description: >
+    Generate detailed lesson plans for each topic with activities and time blocks.
+  expected_output: >
+    Structured plans including objectives, duration, learning activities, and in-class examples.
+  agent_id: >
+    lesson_planner
+  context:
+    - topic_analysis_task
